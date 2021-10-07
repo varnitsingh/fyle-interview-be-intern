@@ -7,6 +7,6 @@ class FyleError(Exception):
         self.status_code = status_code
 
     def to_dict(self):
-        res = dict()
-        res['message'] = self.message
-        return res
+        # res = dict()
+        # res['message'] = self.message
+        return {'message':self.message}
